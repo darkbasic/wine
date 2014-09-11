@@ -303,7 +303,7 @@ src_unpack() {
                 ewarn "to Wine bugzilla unless you can reproduce them with USE=-pipelight"
 		unpack "${COMPHOLIO_PATCHES}.tar.gz"
 		cd wine-${PV}
-		make -C ../wine-compholio-${PV}/patches DESTDIR=$(pwd) install
+		make -C ../wine-compholio-${COMPHOLIOV}/patches DESTDIR=$(pwd) install
 		cd ..
 	fi
 	unpack "${WINE_GENTOO}.tar.bz2"
